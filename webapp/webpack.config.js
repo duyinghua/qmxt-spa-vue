@@ -7,8 +7,9 @@ var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
+        publicPath: "/cdn/",
         path: ROOT + '/dist',
-        filename: '[name]_[hash].js'
+        filename: '[name].js?[hash]'
     },
     module: {
         rules: [
@@ -55,12 +56,12 @@ module.exports = {
     ],
     devServer: {
         historyApiFallback: true,
-        noInfo: true
+        inline: true
     },
     performance: {
         hints: false
     },
-    devtool: '#eval-source-map'
+    devtool: 'source-map'
 }
 
 if (process.env.NODE_ENV === 'production') {
