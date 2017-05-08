@@ -86,7 +86,7 @@
 </script>
 
 <style>
-    .info-list li { padding: 20px 15px; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #E0E0E0), to(#E0E0E0)); background-repeat: repeat-x; background-position: left bottom; background-size: 300px 1px; cursor: pointer; }
+    .info-list li { font-size: 16px; padding: 20px 15px; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #E0E0E0), to(#E0E0E0)); background-repeat: repeat-x; background-position: left bottom; background-size: 300px 1px; cursor: pointer; }
     .info-list li:last-child { background: none; }
     .info-list li.style-banner { padding: 0; background: none; }
     .info-list li > a { display: block; color: #333; }
@@ -104,7 +104,7 @@
     .info-list li.style-1 > a { display: -webkit-box; -webkit-box-orient: horizontal; }
     .info-list li.style-1 .photo { position: relative; width: 120px; height: 90px; }
     .info-list li.style-1 .info { display: block; margin-left: 12px; -webkit-box-flex: 1; }
-    .info-list li.style-1 .info .tit { height: 36px; line-height: 18px; font-size: 16px; margin-bottom: 10px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+    .info-list li.style-1 .info .tit { height: 36px; line-height: 18px; margin-bottom: 10px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
     .info-list li.style-1 .statistics { margin: 10px 0; overflow: hidden; }
     .info-list li.style-2 .photo { position: relative; width: 100%; padding-bottom: 68.8%; margin: 15px 0; }
     .info-list li.style-2 .statistics { margin: 0; overflow: hidden; }

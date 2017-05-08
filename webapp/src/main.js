@@ -1,3 +1,4 @@
+require('./assets/css/common.css')
 import Vue from 'vue'
 import router from './router'
 import {DOMAIN, webInterface} from './assets/lib/common.js'

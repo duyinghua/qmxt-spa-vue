@@ -7,22 +7,23 @@ var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
-        publicPath: "./dist/",
+        publicPath: "/dist/",
         path: ROOT + '/dist',
         filename: '[name].js?[hash]'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
                     // other vue-loader options go here
+                    postcss: [require('postcss-px2rem')({remUnit: 37.5})]
                 }
             },
             {
                 test: /\.css$/,
-                loader: 'style!css!px2rem?remUnit=75&remPrecision=8'
+                loader: 'style-loader!css-loader!postcss-loader',
             },
             {
                 test: /\.js$/,
