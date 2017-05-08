@@ -12,14 +12,17 @@ module.exports = {
         filename: '[name].js?[hash]'
     },
     module: {
-        rules: [
+        loaders: [
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
-                    loaders: {}
                     // other vue-loader options go here
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css!px2rem?remUnit=75&remPrecision=8'
             },
             {
                 test: /\.js$/,
@@ -64,7 +67,6 @@ module.exports = {
     },
     devtool: 'source-map'
 }
-
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map'
     // http://vue-loader.vuejs.org/en/workflow/production.html
