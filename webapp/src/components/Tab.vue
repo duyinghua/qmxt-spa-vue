@@ -17,7 +17,7 @@
 
 <style>
     .tab-nav { position: fixed; bottom: 0; left: 0; height: 50px; width: 100%; background-color: #FFF; font-size: 10px; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #E0E0E0), to(#E0E0E0)); background-repeat: repeat-x; background-position: left top; background-size: 100% 1px; }
-    .tab-nav a { display: block; -webkit-box-flex: 1; width: 10px; height: 100%; text-align: center; padding: 32px 0 3px; color: #AAA; cursor: pointer; }
+    .tab-nav a { display: block; -webkit-box-flex: 1; width: 10px; height: 100%; text-align: center; padding: 32px 0 3px; color: #AAA; cursor: pointer; text-decoration: none; }
     .tab-nav .news { background: url(../assets/img/news-unselected.png) no-repeat center 7px / auto 24px; }
     .tab-nav .video { background: url(../assets/img/video-unselected.png) no-repeat center 7px / auto 24px; }
     .tab-nav .news.active { background-image: url(../assets/img/news-selected.png); color: #FF8100; }
