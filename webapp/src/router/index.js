@@ -7,10 +7,11 @@ import SearchPage from '../components/SearchPage.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {path: '/', redirect: '/news'},
-    {path: '/news', component: NewsPage},
-    {path: '/video', component: VideoPage},
-    {path: '/search', component: SearchPage}
-  ]
+    mode: 'history',
+    routes: [
+        {path: '/', redirect: '/news'},
+        {path: '/news', component: NewsPage},
+        {path: '/video', component: VideoPage},
+        {path: '/search', component: SearchPage}
+    ]
 })

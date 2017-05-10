@@ -7,7 +7,7 @@ var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
-        publicPath: "/dist/",
+        publicPath: "./dist/",
         path: ROOT + '/dist',
         filename: '[name].js?[hash]'
     },
@@ -61,7 +61,7 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         inline: true,
-        port: 9090,
+        port: 9991,
         host: '0.0.0.0'
     },
     performance: {
